@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoSphere - Time Travel Festival</title>
+    <style>
+        /* ... (keep previous CSS but modify colors and animations) ... */
+        body {
+            background: #0a0a0a;
+            color: #fff;
+        }
+        .carousel .list .item .topic {
+            color: #00f3ff;
+            text-shadow: 0 0 15px #00f3ff;
+        }
+        .buttons button {
+            background: linear-gradient(45deg, #00f3ff, #bc13fe);
+            color: #000;
+        }
+        .buttons button:nth-child(2) {
+            background: transparent;
+            border: 2px solid #00f3ff;
+            color: #00f3ff;
+        }
+        /* Add more futuristic animations */
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Events</a>
+            <a href="">Map</a>
+            <a href="">Gallery</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    <div class="carousel">
+        <div class="list">
+            <!-- Prehistoric Era -->
+            <div class="item">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dfuturistic&psig=AOvVaw2wn69oHncJSleXmnFev9pn&ust=1739293446925000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiZzpHLuYsDFQAAAAAdAAAAABAE">
+                <div class="content">
+                    <div class="author">ChronoSphere 2024</div>
+                    <div class="title" style="font-family: 'Orbitron', sans-serif;">PREHISTORIC ERA</div>
+                    <div class="topic">LAND OF DINOSAURS</div>
+                    <div class="des">
+                        Journey to the dawn of time! Experience volcanic landscapes, fossil workshops, 
+                        and our legendary dinosaur costume parade. Participate in ancient survival 
+                        challenges and cave art competitions!
+                    </div>
+                    <div class="buttons">
+                        <button>REGISTER NOW</button>
+                        <button>EXPLORE ERA</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medieval Times -->
+            <div class="item">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Ffuturistic-technology&psig=AOvVaw2wn69oHncJSleXmnFev9pn&ust=1739293446925000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiZzpHLuYsDFQAAAAAdAAAAABAJ">
+                <div class="content">
+                    <div class="author">ChronoSphere 2024</div>
+                    <div class="title" style="font-family: 'Orbitron', sans-serif;">MEDIEVAL REALMS</div>
+                    <div class="topic">AGE OF KNIGHTS</div>
+                    <div class="des">
+                        Enter our castle grounds for jousting tournaments, archery contests, and 
+                        medieval feast nights. Compete in the grand costume ball and witness 
+                        spectacular fire-breathing dragon shows!
+                    </div>
+                    <div class="buttons">
+                        <button>REGISTER NOW</button>
+                        <button>EXPLORE ERA</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Future Tech -->
+            <div class="item">
+                <img src="futuristic-bg-3.jpg">
+                <div class="content">
+                    <div class="author">ChronoSphere 2024</div>
+                    <div class="title" style="font-family: 'Orbitron', sans-serif;">FUTURE WORLD</div>
+                    <div class="topic">TECHNOLOGY HORIZONS</div>
+                    <div class="des">
+                        Experience 3023 with VR gaming tournaments, robot battles, and holographic 
+                        displays. Participate in AI workshops and zero-gravity simulations!
+                    </div>
+                    <div class="buttons">
+                        <button>REGISTER NOW</button>
+                        <button>EXPLORE ERA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Thumbnail Items -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="prehistoric-thumb.jpg">
+                <div class="content">
+                    <div class="title">Prehistoric</div>
+                    <div class="description">Dawn of Civilization</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="medieval-thumb.jpg">
+                <div class="content">
+                    <div class="title">Medieval</div>
+                    <div class="description">Age of Knights</div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="future-thumb.jpg">
+                <div class="content">
+                    <div class="title">Future</div>
+                    <div class="description">Tomorrow's World</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <div class="time"></div>
+    </div>
+
+    <!-- Add these font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        // Add futuristic hover effects
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.boxShadow = `0 0 20px ${button.style.backgroundColor}`;
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.boxShadow = 'none';
+            });
+        });
+
+        // Add background animation
+        const body = document.body;
+        setInterval(() => {
+            body.style.background = `radial-gradient(circle at ${Math.random()*100}% ${Math.random()*100}%, 
+                #0a0a0a, #17002e)`;
+        }, 5000);
+    </script>
+</body>
+</html>
